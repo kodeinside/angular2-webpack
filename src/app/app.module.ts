@@ -11,12 +11,10 @@ import { routing } from './app.routing';
 
 import { removeNgStyles, createNewHosts } from '@angularclass/hmr';
 
-import { HighlightJsModule, HighlightJsService } from 'angular2-highlight-js';
+ import { HighlightJsModule, HighlightJsService } from 'angular2-highlight-js';
 
 import { CardModule } from './@components/card/card.module';
 import { MenuModule } from './@components/menu/menu.module';
-
-//import 'highlight.js/lib/highlight.js';
 
 @NgModule({
     imports:

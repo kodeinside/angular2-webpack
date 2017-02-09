@@ -1,12 +1,15 @@
 // styles applied on :host are applied on the current component, "app" in this case
 
 
+/*
+ -> Movido para app.scss
 html, body {
     height: 100%;
     justify-content: center;
     overflow-x: hidden;
     overflow-y: hidden;
 }
+*/
 
 
 /*Flexbox gives us the flexiness we need. The top just stays put as there is no scrolling on the body due to the page never exceeding viewport height*/

@@ -83,4 +83,12 @@ pre {
     text-align: justify;
 }
 
+
+.btn-r-top {
+    position: absolute;
+    right: 20px;
+    top: -5px;
+    ;
+}
+
 /* Esse bloco será removido*/
