@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class HomeService {
 
-    private cardGet = 'http://localhost/kodeinside.com/index/index.php/card/card/getList';
+    private cardGet = 'http://localhost/kodeinside.com/index/index.php/Site/Capa/getList';
     private headers = new Headers({ 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8' });
     private options: RequestOptions;
 

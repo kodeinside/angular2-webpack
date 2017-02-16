@@ -6,7 +6,7 @@ import { Headers, RequestOptions } from '@angular/http';
 @Injectable()
 export class CardService {
 
-    private cardGet = 'http://localhost/kodeinside.com/index/index.php/card/card/getList';
+    private capaGet = 'http://localhost/kodeinside.com/index/index.php/Site/Capa/getList';
     private headers = new Headers({ 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8' });
     private options: RequestOptions;
 
@@ -15,7 +15,7 @@ export class CardService {
     }
 
     public getList() {
-        return this.http.get(this.cardGet, this.options).toPromise().then(
+        return this.http.get(this.capaGet, this.options).toPromise().then(
             response => {
                 return response.json().data;
             }

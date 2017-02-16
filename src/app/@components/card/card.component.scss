@@ -11,6 +11,26 @@
 }
 
 .panel:hover {
-    border: 1px solid rgba(0, 153, 0, 1);
-    background-color: rgba(38, 38, 38, 0.2);
+    /*border: 1px solid rgba(0, 153, 0, 1);*/
+    background-color: rgba(2, 117, 216, 0.1);
+}
+
+
+.img-panel {
+    height: 150px;
+    max-height: 150px;
+    width:  200px;
+    display: table-cell; 
+    vertical-align: middle; 
+}
+
+img{
+
+    max-height: 100%;
+    max-width:  100%;
+}
+
+.text-centered{
+    text-align: center;
+    text-align: -webkit-center;
 }

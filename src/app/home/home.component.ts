@@ -1,26 +1,27 @@
 import { Component, OnInit } from '@angular/core';
 //import { Component, OnInit, ElementRef, AfterViewInit } from '@angular/core';
-import { Card } from '../@components/card/card.class';
+import { Capa } from '../@components/card/capa.class';
 import { HomeService } from './home.service';
 //import { HighlightJsService } from '../../../node_modules/angular2-highlight-js/lib/highlight-js.service';
-
+//import { routerTransition } from './router.animations';
 @Component({
     selector: 'my-home',
     templateUrl: './home.component.html',
     styleUrls: ['./home.component.scss'],
+    //    animations: [routerTransition()],
+    //    host: { '[@routerTransition]': '' }
 })
 export class HomeComponent implements OnInit {
     //    , AfterViewInit {
     //    private isCopied2 = false;
-    private cards: Array<Card>;
+    private capas: Array<Capa>;
     //    private sampleContent = '';
 
     constructor(public service: HomeService) {
         //        , private el: ElementRef, private serviceJs: HighlightJsService) {
-        this.service.getList()
-            .then(cards => {
-                this.cards = cards;
-            });
+        this.service.getList().then(res => {
+            this.capas = res;
+        });
     }
 
     ngOnInit() {
